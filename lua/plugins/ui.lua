@@ -44,4 +44,31 @@ return {
       })
     end,
   },
+
+  -- bufferline
+  {
+    "akinsho/bufferline.nvim",
+    keys = {
+      { "<Tab>", "<Cmd>BufferLineCycleNext<cr>", desc = "Next tab" },
+      { "<S-Tab>", "<Cmd>BufferLineCyclePrev<cr>", desc = "Prev tab" },
+    },
+    opts = {
+      options = {
+        mode = "tabs",
+        show_buffer_close_icons = false,
+        show_close_icon = false,
+      },
+    },
+  },
+
+  -- statusline
+  -- {
+  --   "nvmi-lualine/lualine.nvim",
+  --   event = "VeryLazy",
+  --   opts = {
+  --     options = {
+  --       theme = "solarized_dark",
+  --     },
+  --   },
+  -- },
 }
